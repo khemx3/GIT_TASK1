@@ -16,7 +16,12 @@ class Bus(Transportation):
       Transportation.__init__( self, start, end, distance)
    def find_cost(self):
       return 8
-
+class Train(Transporation):
+   def __init__( self, start, end, distance ):
+      Transportation.__init__( self, start, end, distance)
+   def find_cost(self):
+      return 5
+   
 class Walk( Transportation ):
 
    def __init__( self, start, end, distance ):
