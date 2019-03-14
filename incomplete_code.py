@@ -11,7 +11,11 @@ class Transportation(object):
    def find_cost( self ):
       """Abstract method; derived classes must override"""
       raise NotImplementedError
-
+class Bus(Transportation):
+   def __init__( self, start, end, distance ):
+      Transportation.__init__( self, start, end, distance)
+   def find_cost(self):
+      return 8
 
 class Walk( Transportation ):
 
